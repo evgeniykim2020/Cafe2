@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_home1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Ресторан ProCafe в Москве – небольшое столичное заведение с уютной обстановкой, приятным компетентным персоналом, невысокими ценами и разнообразным меню. Ресторан довольно популярен у местных жителей и гостей столицы. Здесь всегда можно вкусно пообедать, выпить кружку горячего чая морозной зимой, поболтать со старым другом за бокалом пива, да и просто отдохнуть после тяжёлой рабочей недели."
+                />
+
+            <ImageView
+                android:id="@+id/o_cafe_pic1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/text_home1"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/o_cafe1"/>
+
+            <TextView
+                android:id="@+id/text_home2"
+                android:layout_below="@+id/o_cafe_pic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Интерьер заведения – современный классический. В нём нет пафоса и лишней напыщенности. Всё смотрится скромно, но стильно. Стены декорированы силикатным кирпичом, на полу – глянцевая светлая плитка, мебель – современная, с правильными геометрическими линиями. Уюта и романтики обстановке добавляют живые цветы, небольшие фонари над столами, и натяжной потолок со встроенными небольшими лампочками, которые в темное время суток становятся похожи на многочисленные звёзды, усыпавшие ночное небо."
+                />
+
+            <ImageView
+                android:id="@+id/o_cafe_pic2"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/text_home2"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/o_cafe2"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

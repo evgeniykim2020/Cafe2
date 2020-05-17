@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.MenuFragment">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_gallery"/>
+
+    <LinearLayout android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="wrap_content"
+            android:id="@+id/button1"
+            android:layout_height="wrap_content"
+            android:text="Китайская кухня"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="0.3"></Button>
+        <Button
+            android:text="Европейская кухня"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"></Button>
+        <Button
+            android:text="Казахская кухня"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"></Button>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/chinese_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Первые блюда"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/horda_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/horda_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Хорда суп"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/horda_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/horda_soup"
+                android:layout_marginEnd="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lapsha_linea"
+            android:layout_below="@+id/horda_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lapsha_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Лапша суп"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/lapsha_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/lapsha_soup"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vanton_linea"
+            android:layout_below="@+id/lapsha_linea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/vanton_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Вонтон суп"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/vanton_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/vonton_soup"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vtorye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вторые блюда"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/vanton_linea"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/myaso_linear"
+            android:layout_below="@+id/vtorye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/myaso_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мясо в соусе"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/myaso_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/myaso_v_souse"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kuritsa_linea"
+            android:layout_below="@+id/myaso_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/kuritsa_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Курица по Пекински"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/kuritsa_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/kuritsa"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lomein_linea"
+            android:layout_below="@+id/kuritsa_linea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/lomein_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Лапша"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/lomein_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/lapsha"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/european_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Первые блюда"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/goroh_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/goroh_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Гороховый суп"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/goroh_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/goroh"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/uha_linea"
+            android:layout_below="@+id/goroh_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/uha_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Уха"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/uha_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/uha"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/solyanka_linea"
+            android:layout_below="@+id/uha_linea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/solyanka_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Солянка"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/solyanka_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/solyanka"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vtorye_eu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вторые блюда"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/solyanka_linea"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/befstro_linear"
+            android:layout_below="@+id/vtorye_eu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/befstro_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Бефстроганов"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/befstro_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/befstog"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/makaron_linea"
+            android:layout_below="@+id/befstro_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/makaron_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Макароны"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/makaron_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/makaron"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pelmen_linea"
+            android:layout_below="@+id/makaron_linea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/pelmen_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пельмени"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/pelmen_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pelmen"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kazakh_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Первые блюда"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/kyufta_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/kyufta_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кюфта"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/kyufta_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/kyufta"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nuhat_linea"
+            android:layout_below="@+id/kyufta_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/nuhat_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Шурпа нухат"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/nuhat_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/nuhat"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post_linea"
+            android:layout_below="@+id/nuhat_linea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/post_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Постная шурпа"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/post_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/post"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vtorye_kzh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вторые блюда"
+            android:textAllCaps="true"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/post_linea"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/beshxx1_linear"
+            android:layout_below="@+id/vtorye_kzh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/beshxx1_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Бешпармак XXI"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/beshxx1_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/beshxxi"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/besh_kur_linea"
+            android:layout_below="@+id/beshxx1_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/besh_kur_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Макароны"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/besh_kur_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/besh_kur"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mantyk_linea"
+            android:layout_below="@+id/besh_kur_linea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/mantyk_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Манты с тыквой"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:id="@+id/mantyk_pic"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/mant_tyk"
+                android:layout_marginEnd="20dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
